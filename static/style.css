@@ -25,10 +25,69 @@
     --tcolor_gray_a_opacity: rgba(143, 143, 143, 0.9);
 }
 
-.main{
+.bg-overlay-white {
+    background-color: rgba(238, 238, 238, 0.8);
+}
+
+.bg-overlay-green {
+    background-color: var(--tcolor_green_opacity);
+}
+
+/*--->Navbar<---*/
+.navbar {
+    background-color: var(--tcolor_green_b);
+}
+
+.navbar .btn-danger {
+    background-color: var(--tcolor_green_b);
+    border: 2px solid var(--tcolor_white_a);
+}
+
+.navbar .btn-danger:hover {
+    background-color: var(--tcolor_white_a);
+    color: var(--tcolor_green_b);
+}
+
+/*--->Welcome<---*/
+.main {
+    background: url(../static/image/bg_receitas.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.main_bg {
+    background-color: var(--tcolor_green_opacity);
+}
+
+.main_welcome {
     padding-left: 0;
     padding-right: 0;
+    text-align: center;
 }
+
+.main_welcome h1 {
+    font-size: 3em;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.main_welcome_title {
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+.main_welcome_subtitle {
+    font-size: 1.25em;
+    color: #FFFFFF;
+}
+
+/*--->Gallery<---*/
+.main_gallery {
+    margin-top: 40px;
+}
+
+
 /*
 .container_flex {
     max-width: 1200px;
