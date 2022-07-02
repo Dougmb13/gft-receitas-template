@@ -1,0 +1,39 @@
+/*COLOR THEME*/
+:root {
+    --tcolor_blue_a: #006699;
+    --tcolor_blue_b: #0099cc;
+    --tcolor_black_a: #191919;
+    --tcolor_gray_a: #333333;
+    --tcolor_gray_b: #8f8f8f;
+    --tcolor_gray_c: #cfcfcf;
+    --tcolor_white_a: #f3f3f3;
+    --tcolor_white_b: #FFFFFF;
+    --tcolor_green_a: #4caf50;
+    --tcolor_green_b: #74c500;
+    --tcolor_green_c: #b1dd73;
+    --tcolor_pink: #f6018e;
+    --tcolor_red_a: #7F000D;
+    --tcolor_red_b: #b80a13;
+    --tcolor_orange: #BF8802;
+    --tcolor_brown_a: #873f30;
+    --tcolor_brown_b: #c38e76;
+    --tcolor_green_opacity: rgba(76, 175, 80, 0.9);
+    --tcolor_red_opacity: rgba(184, 10, 19, 0.8);
+    --tcolor_green_orange: rgba(191, 136, 2, 0.8);
+    --tcolor_white_opacity: rgba(255, 255, 255, 0.8);
+    --tcolor_blue_opacity: rgba(30, 65, 154, 0.9);
+    --tcolor_gray_a_opacity: rgba(143, 143, 143, 0.9);
+}
+
+.main{
+    padding-left: 0;
+    padding-right: 0;
+}
+/*
+.container_flex {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+*/

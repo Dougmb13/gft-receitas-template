@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout.html}">
+<meta charset="UTF-8">
+<div layout:fragment="content">
+	<div class="alert alert-primary" th:if="${message != null}"
+		th:text="${message}"></div>
+	<div class="card">
+		<div class="card-header">
+			<p class="text-primary">Nova Receita</p>
+		</div>
+		<div class="card-body">
+			<form method="POST" th:object="${receita}"
+				th:action="@{/receitas/new}">
+				<input type="hidden" th:field="*{receitaId}">
+				<div class="form-group mb-3">
+					<label for="nome">Nome da Receita:</label> <input
+						class="form-control" type="text" th:field="*{nome}" required></input>
+						<div class="text-danger" th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}"></div>
+				</div>
+				<div class="form-group mb-3">
+					<label for="nome">Url da Imagem:</label> <input
+						class="form-control" type="text" th:field="*{urlImagem}" required></input>
+						<div class="text-danger" th:if="${#fields.hasErrors('urlImagem')}" th:errors="*{urlImagem}"></div>
+				</div>
+				<button type="submit" class="btn btn-primary mt-2" id="salvar">Salvar
+					Receita</button>
+				<a class="btn btn-primary mt-2" type="button"
+					href="javascript:history.back()">Voltar a página anterior</a>
+			</form>
+		</div>
+	</div>
+</div>
+
+</html>
